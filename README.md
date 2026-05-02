@@ -1,16 +1,75 @@
-# React + Vite
+🎮 Tic Tac Toe AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance Tic Tac Toe game built with React and Tailwind CSS, featuring a minimalist dark-mode interface and an unbeatable AI opponent powered by the Minimax algorithm.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://tic-tac-toe-iota-self-77.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Features
+🧠 Unbeatable AI
+Uses the Minimax Algorithm to evaluate all possible moves, ensuring the AI never loses.
+🎨 Modern UI/UX
+Clean, dark-themed interface with smooth transitions using Tailwind CSS.
+📱 Responsive Design
+Optimized for both desktop and mobile devices.
+⚡ High Performance
+Built with Vite for fast development and optimized builds.
+🧾 Clean Codebase
+Structured and self-explanatory code with zero unnecessary comments.
+🛠️ Tech Stack
+Framework: React (Vite)
+Styling: Tailwind CSS
+State Management: React Hooks
+Algorithm: Minimax (Recursive)
+📦 Installation & Setup
+1. Clone the Repository
+git clone https://github.com/your-username/tic.git
+cd tic
+2. Install Dependencies
+npm install
+3. Configure Tailwind CSS
 
-## React Compiler
+Ensure src/index.css includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+4. Run Development Server
+npm run dev
 
-## Expanding the ESLint configuration
+Open your browser and visit:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+http://localhost:5173/
+🧠 How the AI Works
+
+The AI is powered by the Minimax algorithm, a recursive decision-making algorithm used in game theory.
+
+It simulates all possible future board states.
+Assigns scores:
+Win: +10
+Loss: -10
+Draw: 0
+Chooses the move that:
+Maximizes its own score
+Minimizes the opponent’s score
+
+➡️ Result: The AI is mathematically impossible to beat.
+
+📁 Project Structure
+tic/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── public/
+├── package.json
+└── vite.config.js
+🚀 Deployment
+
+The project is deployed on Vercel:
+
+🔗 https://tic-tac-toe-iota-self-77.vercel.app/
+
+📄 License
+
+This project is open-source and available under the MIT License.
